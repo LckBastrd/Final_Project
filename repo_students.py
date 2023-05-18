@@ -119,4 +119,4 @@ class FileSystemLinkRepository(LinkRepository):
         return link
 
 
-repository = InMemoryLinkRepository()
+repository = FileSystemLinkRepository(os.getcwd())
